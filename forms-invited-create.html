@@ -1,0 +1,264 @@
+<html lang="en" class="js-focus-visible">
+<script type="text/javascript">
+  window["_gaUserPrefs"] = {
+    ioo: function () {
+      return true;
+    }
+  }
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <title>Better You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="A premium admin dashboard template by themesbrand" name="description">
+  <meta content="Themesbrand" name="author">
+
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <!--Morris Chart CSS -->
+  <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+  <link href="assets/plugins/metro/MetroJs.min.css" rel="stylesheet">
+
+  <!-- App css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    @font-face {
+      font-weight: 400;
+      font-style: normal;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2') format('woff2');
+    }
+    body{
+          background-color: #3B8B82;
+        }
+    @font-face {
+      font-weight: 400;
+      font-style: italic;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 500;
+      font-style: normal;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 500;
+      font-style: italic;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 700;
+      font-style: normal;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 700;
+      font-style: italic;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 900;
+      font-style: normal;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 900;
+      font-style: italic;
+      font-family: 'Inter-Loom';
+
+      src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
+    }
+  </style>
+</head>
+
+<body class="enlarge-menu" style="
+    padding-left: 15px;
+    padding-right: 15px;>
+  <div class="page-wrapper">
+    <div class="container-fluid">
+    <br /><br />
+    <ul class="list-unstyled multi-steps">
+      <li>Sign Up</li>
+      <li>Challenge</li>
+      <li class="is-active">Habit</li>
+      <!-- <li>Finish</li> -->
+    </ul>
+  </div>
+    
+    <!-- Page Content-->
+    <div class="">
+      <br>
+      <div class="container-fluid" style="padding-right: 15px; padding-left: 15px;">
+        <div class="row d-flex justify-content-center" style="
+    height: 395px;
+">
+          <div class="card">
+            <div class="card-body">
+
+              <br>
+              <h5 class="mt-0 ml-3">Choose your habit</h5>
+              <div class="col-sm-4">
+
+
+
+                <!-- fun habit pick -->
+                <div class="input-field" style="display: flex; justify-content: center;">
+                  <div id="habbittoggle" class="btn-group btn-group-toggle" data-toggle="buttons"
+                    onchange="chooseHabit(this)">
+                    <label class="habitopti btn btn-warning" style="width:96px";>
+                      <input class="optionhabit" type="radio" name="options" id="paint_habit" autocomplete="off">
+                      <img src="cute-img/044-palette.png" alt="" class="thumb-md mr-1 mb-2">
+                      <p>Paint</p>
+                    </label>
+                    <label class="habitopti btn btn-warning" style="width:96px";>
+                      <input class="optionhabit" type="radio" name="options" id="knit_habit" autocomplete="off">
+                      <img src="cute-img/0066-knit.png" alt="" class="thumb-md mr-1 mb-2">
+                      <p>Knit</p>
+                    </label>
+                    <label class="habitopti btn btn-warning" style="width:96px";>
+                      <input class="optionhabit" type="radio" name="options" id="play_instrument_habit"
+                        autocomplete="off">
+                      <img src="cute-img/keyboard.png" alt="" class="thumb-md mr-1 mb-2">
+                      <p>Play</p>
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <!-- fun habit pick -->
+              <!-- <div class="input-field"> -->
+
+
+
+              <br>
+              <h5 class="mt-0 ml-3">Choose The prize</h5>
+
+              <div class="col-sm-4">
+                <div class="input-field">
+                  <div class="dropdown mo-mb-2">
+                    <div>
+                      <select id="prize" class="custom-select" onchange="coosePrize(this)">
+                        <option selected="">Prize</option>
+                        <option value="1">Pizza</option>
+                        <option value="2">Hamburger</option>
+                        <option value="3">Movie&amp;Popcorn</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <button onclick="setHabitprize()" class="btn btn-primary btn-lg btn-block sumbit-btn"
+                  type="">Finish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end page content -->
+      </div>
+      <!-- end page-wrapper -->
+
+
+
+
+
+      <footer>
+    
+      </footer>
+
+
+
+      <!-- jQuery  -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/metisMenu.min.js"></script>
+      <script src="assets/js/waves.min.js"></script>
+      <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+      <!--Plugins-->
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script src="assets/plugins/morris/morris.min.js"></script>
+      <script src="assets/plugins/raphael/raphael-min.js"></script>
+      <script src="assets/plugins/metro/MetroJs.min.js"></script>
+      <script src="assets/plugins/jquery-knob/excanvas.js"></script>
+      <script src="assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+      <script src="assets/pages/jquery.dashboard.init.js"></script>
+     
+
+      <!-- !firebase start -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+      <script>
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB2Au2vtXQIyKSjOgek0kaZAjsM3vXcxJY",
+  authDomain: "betteryou1-1c7a4.firebaseapp.com",
+  databaseURL: "https://betteryou1-1c7a4.firebaseio.com",
+  projectId: "betteryou1-1c7a4",
+  storageBucket: "betteryou1-1c7a4.appspot.com",
+  messagingSenderId: "356574666550",
+  appId: "1:356574666550:web:a7330d9fd93f29bd135d97",
+  measurementId: "G-9CW47VHDH4"
+};
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="scripts/auth.js"></script>
+      <script src="scripts/login_admin.js"></script>
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</body>
+<loom-container id="lo-engage-ext-container">
+  <div></div>
+  <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+
+</html>

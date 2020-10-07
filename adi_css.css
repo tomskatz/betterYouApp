@@ -1,0 +1,172 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.home-noti {
+  position: fixed;
+  bottom: 0;
+  /* z-index: 10; */
+}
+
+.home-noti-btn {
+  opacity: 1;
+}
+
+
+.navbar-nocolor {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+
+}
+.myimg {
+
+}
+
+.friendimg{
+  
+}
+
+.knit-img{
+  background-image: url(cute-img/cute-knit.svg);
+}
+
+.piano-img{
+  background-image: url(cute-img/cute-piano.svg);
+}
+
+.paint-img{
+  background-image: url(cute-img/cute-paint.svg);
+}
+
+.apppage {
+  background: url(curve.svg) top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.apppage-piano {
+  background: url(curve-music.svg) top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.apppage-paint {
+  background: url(curve_paint.svg) top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+body {
+
+  background-color: #E9EEF5;
+
+}
+
+.card {
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+
+.notification {
+
+  text-decoration: none;
+  padding: 7px 7px;
+  position: relative;
+  display: inline-block;
+
+}
+
+
+
+.notification .badge {
+  position: absolute;
+}
+
+.navbar-nocolor {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  /* color: #FFFFFF; */
+}
+
+
+
+.icon-bar {
+  background-color: #FFFFFF;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.icon-bar a {
+  float: left;
+  /* how many items in bars */
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #888D91;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #a5a5a5;
+}
+
+.icon-bar a.active {
+  background-color: #DBDADA;
+}
+
+.adicard {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.5) 59.9%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: none;
+  width: 89px;
+  height: 84px;
+  color: #FFFFFF;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+
+}
